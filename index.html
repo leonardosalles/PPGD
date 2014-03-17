@@ -56,7 +56,7 @@
                           <div class="dropdown-menu dropdown-aluno">
                             <form class="navbar-form navbar-right" style="margin-right: 0px;border: 0;margin-left: 0;">
                                 <div class="form-group">
-                                  <input type="text" placeholder="CPF" class="form-control">
+                                  <input type="text" placeholder="CPF" onkeypress="formatar(this, '###.###.###-##')" class="form-control">
                                 </div>
                                 <div class="form-group">
                                   <input type="password" placeholder="Senha" style="margin-top:5px;" class="form-control">
@@ -112,6 +112,21 @@
                 </div>
             </div>
         </div>
+        
+        <script language="javascript">
+	/*----------------------------------------------------------------------------
+	Formatação para qualquer mascara
+	-----------------------------------------------------------------------------*/
+	function formatar(src, mask){
+	  var i = src.value.length;
+	  var saida = mask.substring(0,1);
+	  var texto = mask.substring(i)
+	if (texto.substring(0,1) != saida)
+	  {
+	    src.value += texto.substring(0,1);
+	  }
+	}
+	</script>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
