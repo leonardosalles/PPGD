@@ -1,0 +1,16 @@
+	
+	
+	<div class="boxcustomer">
+		<div class="row-fluid header">
+			<div class="{{header.className ? header.className : 'span6'}}" ng-repeat="header in headers">
+				<label>{{header.label}}</label> <strong title="{{header.text}}">{{header.text}}</strong>
+				
+				<a href class="pull-rigth" ng-if="$last && !collapsed" ng-click="toogle();" title="{{'spa.boxcustomer.hideinfo' | i18n}}">{{'spa.boxcustomer.hideinfo' | i18n}}</a>
+				<a href class="pull-rigth" ng-if="$last && collapsed" ng-click="toogle();" title="{{'spa.boxcustomer.showinfo' | i18n}}">{{'spa.boxcustomer.showinfo' | i18n}}</a>
+			</div>
+		</div>
+
+		<ul ng-show="!collapsed">
+			<li ng-repeat="info in infos"><i class="{{info.icon}}"></i> {{info.text}}</li>
+		</ul>
+	</div>

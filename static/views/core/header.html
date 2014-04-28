@@ -1,0 +1,21 @@
+	<div id="header" class="navbar">
+		<div class="navbar-inner">		
+			<button type="button" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+         		<span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+           		<span class="icon-bar"></span>
+	        </button>
+
+			<a class="brand" href="#/"></a>
+			
+			<span class="title" ng-if="title">{{title}}</span>	
+			
+			<div class="nav-collapse collapse"> 
+        		<ul class="nav pull-right">
+        			<li ng-repeat="info in infos"><a class="info"><strong>{{info.label}}</strong> {{info.text}}</a></li>
+        			<li ng-repeat="link in links"><a href="{{link.href}}" title="{{link.text}}">{{link.text}}</a></li>
+        			<li ng-if="logoutUrl"><a ng-href="{{logoutUrl}}" title="{{'spa.header.logout' | i18n}}"><i class="icon-signout"></i> {{'spa.header.logout' | i18n}}</a></li>
+       			</ul>        			
+	    	</div>
+		</div>
+	</div>

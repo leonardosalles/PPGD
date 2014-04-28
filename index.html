@@ -1,5 +1,7 @@
-    <!DOCTYPE html>
-    <html lang="pt-BR">
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class="no-js lt-ie10 lt-ie9" lang="pt-br" spellcheck="false"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="pt-br" spellcheck="false"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="pt-br" spellcheck="false"> <!--<![endif]-->
       <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +13,12 @@
         <title>Curso de Especialização em Direito Tributário Aplicado: Tributos em Espécie - PPGD</title>
 
         <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/bootstrap.min.css" rel="stylesheet">
               <!-- Bootstrap theme -->
-        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="static/css/bootstrap-theme.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="jumbotron.css" rel="stylesheet">
-          
-        <link href="css/sticky-footer.css" rel="stylesheet">
+        <link href="static/css/jumbotron.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -27,108 +27,17 @@
         <![endif]-->
       </head>
 
-      <body>
-
-        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Menu</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Inicio</a></li>
-                <li><a href="#about">Sobre o curso</a></li>
-                <li><a href="#contact">Corpo docente</a></li>
-                <li><a href="#contact">Inscrição</a></li>
-                <li><a href="#contact">Contato</a></li>
-              </ul>
-                <div class="navbar-right btn-warning">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-user"></span> Área do aluno
-                            </a>
-                          <div class="dropdown-menu dropdown-aluno">
-                            <form class="navbar-form navbar-right" style="margin-right: 0px;border: 0;margin-left: 0;">
-                                <div class="form-group">
-                                  <input type="text" placeholder="CPF" onkeypress="formatar(this, '###.###.###-##')" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                  <input type="password" placeholder="Senha" style="margin-top:5px;" class="form-control">
-                                </div>
-                                <button type="submit" class="btn btn-warning btn-block" style="margin-top:5px;">Entrar</button>
-                              </form>
-                          </div>
-                        </li>
-                      </ul>
-                </div>
-            </div>
-          </div>
-        </div>
-      
-          <div class="container subheader">
-              <div class="row">
-                <div class="col-md-7">
-                    <div style="padding-top: 45px;">
-                        <h4 style="color: #e38d13;margin: 0;">Curso de especialização em</h4>
-                        <h3 style="margin-top: 7px;color: #387CB6;margin-bottom: 0;">Direito Tributário Aplicado</h3>
-                        <h5 style="margin-top: 10px;color: #387CB6;">Tributos em Espécie</h5>
-                    </div>
-                </div>
-                <div class="col-md-3" style="padding-top: 60px;font-size: 17px;color: #387CB6">
-                    <span class="glyphicon glyphicon-phone-alt" style="color: #e38d13"></span> (51) 3366-4455 <br/>
-                    <span class="glyphicon glyphicon-envelope" style="color: #e38d13"></span> dirtributario@ufrgs.br
-                </div>
-                <div class="col-md-2" style="padding-top: 20px;">
-                  <img alt="UFRGS" src="logo_ufgrs.png" width="132" style="border: 5px solid#387CB6;border-radius: 10px;-moz-border-radius: 10px;-webkit-border-radius: 10px;"></img>
-                </div>
-              </div>
-          </div>
+	<body>
+		<div ppgd-bootstrap="true"></div>		    	
+		<div ppgd-loading="true"></div>
+		<div ppgd-menu="menu"></div>
+		<div ppgd-subheader="subheader"></div>
         
-        <div class="container view">
-            <center><h2>CONTEÚDO</h2></center>
-        </div>
-
-        <div id="footer">
-            <div class="container">
-                <div class="row" style="background-color: #387CB6;">
-                    <div class="col-md-10">
-                        <address>
-					       <strong>Universidade Federal do Rio Grande do Sul</strong><br>
-                                Av. João Pessoa, andar <br>
-                                90090-900 - Porto Alegre - RS - BRASIL
-				        </address>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="http://www.ufrgs.br/ppgd" target="_blank">
-                            <img alt="PPGD" src="ppgd.png" style="margin-top: 40px;"></img>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <script language="javascript">
-	/*----------------------------------------------------------------------------
-	Formatação para qualquer mascara
-	-----------------------------------------------------------------------------*/
-	function formatar(src, mask){
-	  var i = src.value.length;
-	  var saida = mask.substring(0,1);
-	  var texto = mask.substring(i)
-	if (texto.substring(0,1) != saida)
-	  {
-	    src.value += texto.substring(0,1);
-	  }
-	}
-	</script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-      </body>
-    </html>
+		<div class="container view">
+			<div id="main" ng-view class="container-fluid"></div>
+		</div>
+		
+        <div ppgd-footer="footer"></div>
+		<script type="text/javascript" data-main="static/js/main" src="vendor/requirejs/require.js" async></script>
+	</body>
+</html>

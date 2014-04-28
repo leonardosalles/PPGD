@@ -1,0 +1,18 @@
+<div id="error-container">
+	<h3>{{'spa.exception.page.header' | i18n}}</h3>	
+	
+	<p>{{error.message}}</p>
+	<ul>
+		<li ng-repeat="e in error.errors">{{e.message}}</li>
+	</ul>
+	
+	<br/>
+	
+	<div class="btn-toolbar">
+		<a class="btn btn-inverse" href="javascript:history.back();"><i class="icon-chevron-left"></i>&nbsp;{{'spa.exception.page.back' | i18n}}</a>
+		<a class="btn btn-inverse" href="#/"><i class="icon-chevron-left"></i>&nbsp;{{'spa.exception.page.backToHome' | i18n}}</a>
+		<a class="btn" href="mailto:suporte@renner.com.br""><i class="icon-envelope"></i>&nbsp;{{'spa.exception.page.support' | i18n}}</a>
+		<button class="btn" ng-click="openStackTrace();"><i class="icon-list"></i>&nbsp; Detalhe do Erro</button>
+	</div>
+	
+</div>

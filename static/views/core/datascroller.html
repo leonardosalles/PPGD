@@ -1,0 +1,23 @@
+
+	
+	<div ng-show="pager.totalResults" class="pagination datascroller datascroller-{{placement}} row-fluid">
+		<div class="span5">
+			<span class="info">{{'spa.datascroller.info' | i18n:{"startRecord": pager.startResult, "endRecord": pager.endResult, "count": pager.totalResults} }}</span>		
+		</div>
+		
+		<div class="span7 text-right">
+			<ul>
+	  			<li ng-repeat="page in pages" ng-class="{active: page.active, disabled: page.disabled}">
+	   				<a ng-click="selectPage(page.number)" title="{{page.title}}">{{page.text}}</a>
+	  			</li>
+			</ul>
+			
+			<select name="limit" class="select text-left" ng-model="pager.currentLimit" ng-change="changeLimit()">
+				<option value="10">10</option>
+				<option value="25">25</option>
+				<option value="50">50</option>
+				<option value="100">100</option>
+			</select>
+		</div>		
+	</div>
+	
