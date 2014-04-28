@@ -1,0 +1,270 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+
+.navbar-nav>li>.dropdown-aluno {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background: #fff !important;
+    border: 1px solid black;
+}
+
+input.ng-dirty.ng-invalid,
+textarea.ng-dirty.ng-invalid,
+select.ng-dirty.ng-invalid,
+.select2-container.ng-dirty.ng-invalid {
+  background-color: #FFEEFF;
+  border-color: #B94A48 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #B94A48;
+}
+input.ng-dirty.ng-invalid:focus,
+textarea.ng-dirty.ng-invalid:focus,
+select.ng-dirty.ng-invalid:focus,
+.select2-container.ng-dirty.ng-invalid:focus {
+  border-color: #953B39 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #d59392 !important;
+}
+input.ng-dirty.ng-invalid + .tooltip,
+textarea.ng-dirty.ng-invalid + .tooltip,
+select.ng-dirty.ng-invalid + .tooltip,
+.select2-container.ng-dirty.ng-invalid + .tooltip {
+  opacity: 1.0;
+}
+input.ng-dirty.ng-invalid + .tooltip .tooltip-inner,
+textarea.ng-dirty.ng-invalid + .tooltip .tooltip-inner,
+select.ng-dirty.ng-invalid + .tooltip .tooltip-inner,
+.select2-container.ng-dirty.ng-invalid + .tooltip .tooltip-inner {
+  background-color: #AD6262;
+}
+input.ng-dirty.ng-invalid + .tooltip.top .tooltip-arrow,
+textarea.ng-dirty.ng-invalid + .tooltip.top .tooltip-arrow,
+select.ng-dirty.ng-invalid + .tooltip.top .tooltip-arrow,
+.select2-container.ng-dirty.ng-invalid + .tooltip.top .tooltip-arrow {
+  border-top-color: #AD6262;
+}
+input.ng-dirty.ng-invalid + .tooltip.bottom .tooltip-arrow,
+textarea.ng-dirty.ng-invalid + .tooltip.bottom .tooltip-arrow,
+select.ng-dirty.ng-invalid + .tooltip.bottom .tooltip-arrow,
+.select2-container.ng-dirty.ng-invalid + .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #AD6262;
+}
+input.ng-pristine.ng-invalid,
+textarea.ng-pristine.ng-invalid,
+select.ng-pristine.ng-invalid,
+.select2-container.ng-pristine.ng-invalid {
+  background-color: #F4F0D0;
+  border-color: #C09853 !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  color: #A47E3C;
+}
+input.ng-pristine.ng-invalid:focus,
+textarea.ng-pristine.ng-invalid:focus,
+select.ng-pristine.ng-invalid:focus,
+.select2-container.ng-pristine.ng-invalid:focus {
+  border-color: #A47E3C !important;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 6px #dbc59e !important;
+}
+input.ng-pristine.ng-invalid + .tooltip,
+textarea.ng-pristine.ng-invalid + .tooltip,
+select.ng-pristine.ng-invalid + .tooltip,
+.select2-container.ng-pristine.ng-invalid + .tooltip {
+  opacity: 1.0;
+}
+input.ng-pristine.ng-invalid + .tooltip .tooltip-inner,
+textarea.ng-pristine.ng-invalid + .tooltip .tooltip-inner,
+select.ng-pristine.ng-invalid + .tooltip .tooltip-inner,
+.select2-container.ng-pristine.ng-invalid + .tooltip .tooltip-inner {
+  background-color: #C09853;
+}
+input.ng-pristine.ng-invalid + .tooltip.top .tooltip-arrow,
+textarea.ng-pristine.ng-invalid + .tooltip.top .tooltip-arrow,
+select.ng-pristine.ng-invalid + .tooltip.top .tooltip-arrow,
+.select2-container.ng-pristine.ng-invalid + .tooltip.top .tooltip-arrow {
+  border-top-color: #C09853;
+}
+input.ng-pristine.ng-invalid + .tooltip.bottom .tooltip-arrow,
+textarea.ng-pristine.ng-invalid + .tooltip.bottom .tooltip-arrow,
+select.ng-pristine.ng-invalid + .tooltip.bottom .tooltip-arrow,
+.select2-container.ng-pristine.ng-invalid + .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #C09853;
+}
+body .body-progress {
+	display: block;
+	padding: 13px;
+	width: 350px;
+	text-align: center;
+	margin: auto;
+	padding-top: 25%;
+}
+body .body-progress .body-progress-text {
+  font-size: 15px;
+  line-height: 20px;
+  padding-bottom: 5px;
+}
+body .body-progress .body-progress-bar {
+  width: 320px;
+}
+body .body-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 9999;
+  text-align: center;
+  color: #999999;
+  display: none;
+}
+body .body-loader .body-loader-inner {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+body.ready #header,
+body.ready #subheader,
+body.ready #container {
+  display: block;
+}
+body.ready .body-loader.active {
+  display: block;
+}
+body.ready .body-progress {
+  display: none;
+}
+
+.glyphicon-spin {
+  display: inline-block;
+  font-size: 30px;
+  color: #282828;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+.loading-text {
+  color: #282828;
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+/* Modal
+=================================================================== */
+.modal {
+  overflow: hidden;
+}
+.modal-content {
+  box-shadow: none;
+}
+.modal-scrollable {
+  overflow: hidden;
+}
+
+.modal-backdrop {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  z-index: 1049 !important;
+}
+.modal-content {
+  border-color: rgba(128, 128, 128, 0.8);
+  border-width: 7px;
+}
+.modal-header {
+  border: none;
+  height: 25px;
+  padding-top: 0px;
+}
+.modal-header h3 {
+  color: #333333;
+  font-size: 15px;
+  line-height: 25px;
+}
+.modal-header .close {
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #7A7A7A;
+  color: #FFFFFF;
+  line-height: 15px;
+  padding: 2px 4px;
+}
+.modal-header .control-close {
+  float: right;
+}
+.modal-header .control-close span {
+  float: left;
+  margin-top: 4px;
+  margin-right: 20px;
+  color: #999999;
+  font-size: 10px;
+}
+.modal-content {
+  background-color: #FFFFFF;
+}
+.modal-success {
+  border-color: rgba(70, 136, 71, 0.8);
+}
+.modal-danger,
+.modal-error {
+  border-color: rgba(185, 74, 72, 0.8);
+}
+.modal-info {
+  border-color: rgba(58, 135, 173, 0.8);
+}
+.modal-warning {
+  border-color: rgba(192, 152, 83, 0.8);
+}
