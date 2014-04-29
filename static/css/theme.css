@@ -582,9 +582,9 @@ body.ready .body-progress {
   display: none;
 }
 
-.glyphicon-spin {
+.fa-spin-anim {
   display: inline-block;
-  font-size: 35px;
+  font-size: 45px;
   color: #282828;
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
