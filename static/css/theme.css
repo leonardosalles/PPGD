@@ -601,7 +601,7 @@ body.ready .body-progress {
     -moz-transform: rotate(0deg);
   }
   100% {
-    -moz-transform: rotate(359deg);
+    -moz-transform: rotate(360deg);
   }
 }
 @-webkit-keyframes spin {
@@ -609,7 +609,7 @@ body.ready .body-progress {
     -webkit-transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 @-o-keyframes spin {
@@ -617,7 +617,7 @@ body.ready .body-progress {
     -o-transform: rotate(0deg);
   }
   100% {
-    -o-transform: rotate(359deg);
+    -o-transform: rotate(360deg);
   }
 }
 @-ms-keyframes spin {
@@ -625,7 +625,7 @@ body.ready .body-progress {
     -ms-transform: rotate(0deg);
   }
   100% {
-    -ms-transform: rotate(359deg);
+    -ms-transform: rotate(360deg);
   }
 }
 @keyframes spin {
@@ -633,7 +633,7 @@ body.ready .body-progress {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(359deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -642,7 +642,7 @@ body.ready .body-progress {
     -moz-transform: rotate(0deg);
   }
   100% {
-    -moz-transform: rotate(359deg);
+    -moz-transform: rotate(360deg);
   }
 }
 
