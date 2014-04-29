@@ -8,7 +8,7 @@ define(['directives/directives'], function (directives) {
 			replace: true,
 			template: '<div class="body-loader">' +
 						'<div class="body-loader-inner">' +
-							'<p><i class="fa fa-spinner fa-spin-anim"></span></p>' +
+							'<p><i class="fa fa-spinner fa-spin-anim"></i></p>' +
 							'<p><span class="loading-text">{{"spa.loading" | i18n}}</span></p>' +
 						'</div>' +
 					  '</div>',
