@@ -1,5 +1,35 @@
 <div class="col-md-8">
   <h2>Corpo docente</h2>
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#corpo-docente" data-toggle="tab">Corpo docente</a></li>
+    <li><a href="#palestrantes" data-toggle="tab">Palestrantes</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="corpo-docente">
+        <ul class="table-view">
+          <li class="table-view-cell media" ng-repeat="professor in corpoDocente">
+            <img style="border: 1px solid black;" alt="{{professor.nome}}" class="media-object pull-left" ng-src="static/img/{{professor.imagem || 'sem-imagem.png'}}">
+            <div class="media-body">
+              <span>{{professor.nome}}</span>
+              <p>{{professor.graduacao}}</p>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <div class="tab-pane" id="palestrantes">
+      <ul class="table-view">
+        <li class="table-view-cell media" ng-repeat="palestrante in palestrantes">
+          <div class="media-body">
+            <span>{{palestrante.nome}}</span>
+            <p>{{palestrante.graduacao}}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <div class="sidebar-light">
