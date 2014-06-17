@@ -6,7 +6,7 @@ define([
 	'moment',
 	'moment-timezone',
 	'moment-timezone-data',
-	
+
 	'bootstrap',
 	'bootstrap-datetimepicker',
 	'bootstrap-hover-dropdown',
@@ -27,7 +27,7 @@ define([
 
 	'bootstrap-datetimepicker',
 	'select2',
-	
+
 	'i18n',
 
 	'filters/filters',
@@ -51,16 +51,19 @@ define([
 	'directives/form',
 	'directives/input',
 	'directives/inputCpf',
+	'directives/inputEmail',
+	'directives/inputPhone',
 	'directives/loading',
 	'directives/bootstrap',
 	'directives/validate',
-	
-	
+	'directives/skeleton/complemento',
+
+
 	'services/services',
 	'services/collections',
 	'services/resources',
 	'services/notify',
 	'services/error',
 	'services/dialog',
-	'services/bootstrap', 
+	'services/bootstrap',
 ], function () {});

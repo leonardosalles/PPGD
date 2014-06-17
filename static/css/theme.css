@@ -380,7 +380,7 @@
     background-color: #e2e2e2;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-top: 35px; 
+    margin-top: 35px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.52);
     -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.52);
     box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.52);
@@ -391,15 +391,15 @@
     display: none;
 }
 
-@media only screen 
+@media only screen
 and (min-width : 1224px) {
     .subheader {
         display: block;
     }
 }
 
-@media only screen 
-and (min-device-width : 768px) 
+@media only screen
+and (min-device-width : 768px)
 and (max-device-width : 1024px) {
     .subheader {
         display: block;
@@ -710,4 +710,98 @@ body.ready .body-progress {
 }
 .modal-warning {
   border-color: rgba(192, 152, 83, 0.8);
+}
+
+.sidebar-light {
+  min-height: 800px;
+  background-color: #f3f3f3;
+  padding: 0;
+  -webkit-box-shadow: -3px 0px 5px 0px rgba(50, 50, 50, 0.30);
+  -moz-box-shadow: -3px 0px 5px 0px rgba(50, 50, 50, 0.30);
+  box-shadow: -3px 0px 5px 0px rgba(50, 50, 50, 0.30);
+  margin-top: -50px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  float: right;
+  width: 345px;
+  z-index: 0;
+}
+
+.init-bar {
+  margin-left: -20px;
+}
+
+.image-legend {
+  height: 50px;
+  background-color: #EB9316;
+  position: absolute;
+  top: 255px;
+  width: 655px;
+  padding: 12px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.image-legend span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.title-bar {
+  height: 50px;
+  background-color: #EB9316;
+  height: 40px;
+  padding: 8px 0 0 15px;
+  margin-top: 10px;
+}
+
+.title-bar span {
+  color: #fff;
+  font-size: 16px;
+}
+
+.content-bar {
+
+}
+
+.eventos {
+  padding: 0;
+}
+
+.eventos li {
+  list-style: none;
+  border-bottom: 1px dashed #e3e3e3;
+  padding: 0 0 9px 15px;
+}
+
+.eventos li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+div.inscricao-shadow {
+  width: 345px;
+  height: 170px;
+  display: block;
+  position: relative;
+  padding-top: 20px;
+}
+
+div.inscricao-shadow::after {
+  content: "";
+  background: url('../../static/img/calculadora.jpg');
+  opacity: 0.3;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.direito-tributario-bar {
+  padding: 15px;
 }

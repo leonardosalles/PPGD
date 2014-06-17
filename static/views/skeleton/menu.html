@@ -13,7 +13,7 @@
 			<li ng-repeat="item in menu">
 				<a title="{{item.description}}" href="{{item.href}}">{{item.description}}</a>
 			</li>
-			
+
 		  </ul>
 			<div class="navbar-right btn-warning">
 				<ul class="nav navbar-nav">
@@ -24,10 +24,10 @@
 					  <div class="dropdown-menu dropdown-aluno">
 						<form class="navbar-form navbar-right" style="margin-right: 0px;border: 0;margin-left: 0;" ng-submit="login()" name="formLoginStudant">
 							<div class="form-group">
-							  <input type="text" placeholder="{{'menu.formLoginStudant.cpf' | i18n}}" ppgd-input-cpf="true" ppgd-required="true" ng-model="cpf" class="form-control">
+							  <input type="text" placeholder="{{'menu.formLoginStudant.cpf' | i18n}}" jet-input-cpf="true" jet-required="true" ng-model="cpf" class="form-control">
 							</div>
 							<div class="form-group">
-							  <input type="password" placeholder="{{'menu.formLoginStudant.password' | i18n}}" ng-model="password" ppgd-required="true" style="margin-top:5px;" class="form-control">
+							  <input type="password" placeholder="{{'menu.formLoginStudant.password' | i18n}}" ng-model="password" jet-required="true" style="margin-top:5px;" class="form-control">
 							</div>
 							<button type="submit" class="btn btn-warning btn-block" style="margin-top:5px;">{{'menu.formLoginStudant.login' | i18n}}</button>
 						  </form>

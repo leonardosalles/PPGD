@@ -1,1 +1,29 @@
-<h2>Inscrição</h2>
+<div class="col-md-8">
+  <h2>Inscrição</h2>
+
+  <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+  <hr />
+
+  <h4>Manifeste seu interesse</h4>
+  <p>Se você tem interesse no curso e deseja receber informações sobre as próximas turmas, deixe seu contato</p>
+
+  <form class="form-inline" role="form">
+  <div class="form-group">
+    <label class="sr-only" for="nome"></label>
+    <input type="email" style="width: 315px;" ng-model="entity.nome" jet-required="true" class="form-control" id="nome" placeholder="Preencha seu nome">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="email">Email</label>
+    <input type="email" style="width: 300px;" ng-model="entity.email" jet-required="true" class="form-control" id="email" placeholder="Preencha seu email">
+  </div>
+
+  <button type="submit" class="btn btn-warning">Enviar</button>
+</form>
+</div>
+
+<div class="sidebar-light">
+  <div ppgd-complemento="direitoTributario"></div>
+  <div ppgd-complemento="eventos"></div>
+  <div ppgd-complemento="inscricao"></div>
+</div>
